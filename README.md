@@ -107,7 +107,7 @@ CyDocumentFake es una plataforma educativa y demostrativa que permite simular da
 ## ⚙️ 1.0 Acceso al proyecto vía Github Pages
 
 ```bash
-https://cyberiuscompany.github.io/CyXSSLab/
+https://cyberiuscompany.github.io/CyDocumentFake/
 ```
 
 ```bash
