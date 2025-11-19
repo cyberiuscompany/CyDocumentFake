@@ -102,37 +102,9 @@ Diseñada con un enfoque de ciberseguridad para......RELLENAR.
 
 ---
 
-## ⚙️ 1.1 Instalación básica con clonado 🪟 Windows
+## ⚙️ 1.0 Acceso al proyecto vía Github Pages
 
 ```bash
-git clone..........
-cd NOMBRE-HERRAMIENTA
-python -m venv venv (No es obligatorio este comando)
-.\venv\Scripts\activate (No es obligatorio este comando)
-pip install -r requirements.txt
-python NOMBRE-HERRAMIENTA
-```
-
-## ⚙️ 1.2 Instalación básica con clonado 🐧 Linux / macOS
-
-```bash
-git clone..........
-cd NOMBRE-HERRAMIENTA
-python3 -m venv venv (No es obligatorio este comando)
-source venv/bin/activate (No es obligatorio este comando)
-pip install -r requirements.txt
-python3 NOMBRE-HERRAMIENTA
-```
-
-## ⚙️ 2 Instalación como si fuese paquete profesional
-
-```bash
-git clone..........
-cd NOMBRE-HERRAMIENTA
-python3 -m venv venv (No es obligatorio este comando)
-source venv/bin/activate (No es obligatorio este comando)
-pip install -r requirements.txt
-pip install .
-NOMBRE-HERRAMIENTA
+https://cyberiuscompany.github.io/CyXSSLab/
 ```
 
