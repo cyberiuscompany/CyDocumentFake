@@ -25,10 +25,6 @@
 # CyDocumentFake
 CyDocumentFake es una plataforma educativa y demostrativa que permite simular datos de documentos oficiales como DNI y tarjetas bancarias. La aplicación genera información ficticia para pruebas de desarrollo y análisis de patrones, sin fines delictivos.
 
-
-Descripción
------------
-CyDocumentFake es una plataforma educativa y demostrativa que permite simular datos de documentos oficiales como DNI y tarjetas bancarias. La aplicación genera información ficticia para pruebas de desarrollo y análisis de patrones, sin fines delictivos.
 ---
 
 <p align="center">
@@ -63,30 +59,36 @@ CyDocumentFake es una plataforma educativa y demostrativa que permite simular da
 </p>
 
 
-## Descripción
-
-**NOMBRE-HERRAMIENTA** es una herramienta.....RELLENAR. 
-
-Diseñada con un enfoque de ciberseguridad para......RELLENAR.
 
 ## 🚀 Funcionalidades principales
 
-- RELLENAR.
-- RELLENAR.
-- RELLENAR.
+- Interfaz visual moderna con efecto glassmorphism.
+- Generación de datos ficticios de DNI (nombre, apellidos, fecha de nacimiento, domicilio, número de soporte, MRZ).
+- Generación de datos ficticios de tarjetas bancarias (titular, número de tarjeta, CVV, entidad, sucursal, fecha de caducidad).
+- Opciones de configuración para mostrar u ocultar CVV y cuenta completa.
+- Footer con enlaces a GitHub, YouTube, PayPal y Discord.
+- Totalmente responsive y compatible con dispositivos móviles.
 
 ## 🧰 Tecnologías utilizadas
 
-- RELLENAR.
-- RELLENAR.
-- RELLENAR.
+- HTML5: Estructura de las páginas web.
+- CSS3: Estilos y diseño visual, incluyendo glassmorphism.
+- JavaScript: Lógica de generación de datos y manipulación del DOM.
+- Font Awesome: Iconos vectoriales para botones y footer.
+- Video HTML5: Reproducción de video de fondo.
+- Responsive Design: Compatibilidad con dispositivos móviles y pantallas de distintos tamaños.
 
 ## 📁 Estructura del proyecto
 
 ```bash
-├── fichero.py # Función Principal
-├── fichero.js # Función Principal
-├── fichero.html # Función Principal
+├── `index.html` : Página principal de login con video de fondo.
+├── `index-generador.html` : Página del generador de datos.
+├── `styles.css` : Estilos para la página de login.
+├── `styles-generador.css` : Estilos para la página del generador.
+├── `script-generador.js` : Lógica de generación de datos de DNI y tarjetas.
+├── `policia.mp4` : Video de fondo de la página de login.
+├── `icono.png` : Icono de la plataforma.
+├── `imagen-generador.jpg` : Imagen simulada para el DNI.
 ```
 ---
 
@@ -106,5 +108,14 @@ Diseñada con un enfoque de ciberseguridad para......RELLENAR.
 
 ```bash
 https://cyberiuscompany.github.io/CyXSSLab/
+```
+
+```bash
+1. Abrir `index.html` en un navegador moderno.
+2. Hacer clic en "Entrar" para acceder al generador de datos.
+3. En la página del generador:
+   - Usar el botón "Generar Nuevos Datos" para crear DNI y tarjeta bancaria.
+   - Usar el botón "Limpiar Todo" para resetear los campos.
+   - Activar o desactivar las opciones de visualización según necesidad.
 ```
 
