@@ -23,7 +23,8 @@
 </p>
 
 # CyDocumentFake
-Este es la plantilla que utilizo para la creación de mis proyectos/herramientas de ciberseguridad
+CyDocumentFake es una plataforma educativa y demostrativa que permite simular datos de documentos oficiales como DNI y tarjetas bancarias. La aplicación genera información ficticia para pruebas de desarrollo y análisis de patrones, sin fines delictivos.
+
 
 Descripción
 -----------
