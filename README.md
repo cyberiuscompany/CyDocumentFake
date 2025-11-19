@@ -28,7 +28,7 @@ CyDocumentFake es una plataforma educativa y demostrativa que permite simular da
 ---
 
 <p align="center">
-  <img src="icono.png" alt="Banner" width="500"/>
+  <img src="icono.png" alt="Banner" width="300"/>
 </p
 
 ---
