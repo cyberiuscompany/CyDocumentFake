@@ -36,26 +36,26 @@ CyDocumentFake es una plataforma educativa y demostrativa que permite simular da
 ## 🎥 Demostración
 
 <p align="center">
-  <img src="docs/Demo.gif" width="1200" alt="Demostración de CyberiusUnzipCracker">
+  <img src="demo.gif" width="1200" alt="Demostración de CyberiusUnzipCracker">
 </p>
 
 ---
 
 ## Fotos de Herramienta
 
-<h2 align="center">Foto 1</h2>
+<h2 align="center">Inicio de la Herramienta</h2>
 <p align="center">
-  <img src="Foto1" alt="Foto 1" width="500"/>
+  <img src="Inicio%20de%20Herramienta.png" alt="Foto 1" width="800"/>
 </p>
 
-<h2 align="center">Foto 2</h2>
+<h2 align="center">Panel generador de datos</h2>
 <p align="center">
-  <img src="Foto2" alt="Foto 2" width="500"/>
+  <img src="Panel%20Generador%20de%20Datos.png" alt="Foto 2" width="800"/>
 </p>
 
-<h2 align="center">Foto 3</h2>
+<h2 align="center">Datos finalmente generados</h2>
 <p align="center">
-  <img src="Foto3" alt="Foto 3" width="500"/>
+  <img src="Datos%20Generados.png" alt="Foto 3" width="800"/>
 </p>
 
 
