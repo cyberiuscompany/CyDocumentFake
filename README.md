@@ -25,10 +25,9 @@
 # CyDocumentFake
 Este es la plantilla que utilizo para la creación de mis proyectos/herramientas de ciberseguridad
 
-Esplicación que hace la herramienta.
-
-- GitHub Pages si la herramienta tiene: https://cyberiuscompany.github.io/NOMBRE-HERRAMIENTA
-- DeepWiki de la herramienta: https://deepwiki.com/RELLENAR+INDEXAR
+Descripción
+-----------
+CyDocumentFake es una plataforma educativa y demostrativa que permite simular datos de documentos oficiales como DNI y tarjetas bancarias. La aplicación genera información ficticia para pruebas de desarrollo y análisis de patrones, sin fines delictivos.
 ---
 
 <p align="center">
