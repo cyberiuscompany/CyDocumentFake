@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Simulador de Datos DNI y Bancarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador de Datos Oficiales</h1>
+            <p>Generador datos de DNI y bancarios reales.</p>
+        </header>
+        
+        <div class="main-content">
+            <!-- Panel Izquierdo: Controles -->
+            <aside class="controls-panel">
+                <h2>Controles</h2>
+                <div class="button-group">
+                    <button id="generateBtn" class="btn generate">Generar Nuevos Datos</button>
+                    <button id="clearBtn" class="btn clear">Limpiar Todo</button>
+                
+                <div class="options">
+                    <h3>Opciones</h3>
+                    <div class="option-group">
+                        <label>
+                            <input type="checkbox" id="showCvv" checked>
+                            Mostrar CVV
+                        </label>
+                        <label>
+                            <input type="checkbox" id="showFullAccount" checked>
+                            Mostrar cuenta completa
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="info">
+                    <p><strong>⚠️ AVISO:</strong> Los datos generados son completamente ficticios y solo deben usarse para pruebas de desarrollo, y no para realizar ataques informáticos.</p>
+                </div>
+            </aside>
+            
+            <!-- Panel Central: DNI -->
+            <section class="dni-panel">
+                <div class="card dni-card">
+                    <div class="card-header">
+                        <div class="spain-flag">
+                            <div class="red"></div>
+                            <div class="yellow"></div>
+                            <div class="red"></div>
+                        </div>
+                        <h3>REINO DE ESPAÑA<br>DOCUMENTO NACIONAL DE IDENTIDAD</h3>
+                        <div class="european-flag">
+                            <div class="blue"></div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="photo-section">
+                            <div class="photo-container">
+                                <div class="photo-frame">
+                                    <img src="imagen.jpg" alt="Foto DNI" id="dniPhoto" class="dni-photo">
+                                </div>
+                                <div class="photo-data">
+                                    <div class="photo-number">
+                                        <span id="dniNumberLarge">00000000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="signature-section">
+                                <div class="signature-label">Firma del titular</div>
+                                <div class="signature-box">
+                                    <div class="signature-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="data-section">
+                            <div class="data-row">
+                                <span class="label">Apellidos:</span>
+                                <span id="dniSurname" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Nombre:</span>
+                                <span id="dniName" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Sexo:</span>
+                                <span id="dniGender" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Nacionalidad:</span>
+                                <span id="dniNationality" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Fecha de nacimiento:</span>
+                                <span id="dniBirthdate" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Lugar de nacimiento:</span>
+                                <span id="dniBirthplace" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Domicilio:</span>
+                                <span id="dniAddress" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Fecha de expedición:</span>
+                                <span id="dniExpedition" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Fecha de caducidad:</span>
+                                <span id="dniExpiry" class="value">-</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="label">Número de soporte:</span>
+                                <span id="dniSupport" class="value">-</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="mrz">
+                            <div class="mrz-line">IDESP<span id="mrzSurname">XXXXXXXXXXXXXXXXXXXX</span></div>
+                            <div class="mrz-line"><span id="mrzNumber">000000000</span><span id="mrzChecksum">0</span>ESP<span id="mrzBirthdate">000000</span><span id="mrzBirthChecksum">0</span><span id="mrzGender">X</span><span id="mrzExpiry">000000</span><span id="mrzExpiryChecksum">0</span>ESP</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Panel Derecho: Tarjeta Bancaria -->
+            <section class="bank-panel">
+                <div class="card bank-card">
+                    <div class="card-header">
+                        <div class="bank-logo">
+                            <div class="chip"></div>
+                            <div class="contactless-symbol">
+                                <div class="wave"></div>
+                            </div>
+                        </div>
+                        <div class="card-brand">
+                            <div class="visa-logo">VISA</div>
+                            <div class="debit-badge">DÉBITO</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="card-number-section">
+                            <span id="cardNumber" class="card-number">**** **** **** ****</span>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="card-holder">
+                                <div class="label">Titular</div>
+                                <div id="cardHolder" class="value">-</div>
+                            </div>
+                            <div class="card-expiry">
+                                <div class="label">Válida hasta</div>
+                                <div id="cardExpiry" class="value">MM/AA</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bank-details">
+                            <div class="bank-info">
+                                <div class="info-row">
+                                    <span class="label">Entidad:</span>
+                                    <span id="bankEntity" class="value">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="label">Sucursal:</span>
+                                    <span id="bankBranch" class="value">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="label">Dígito Control:</span>
+                                    <span id="bankDc" class="value">-</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="label">Número de Cuenta:</span>
+                                    <span id="bankAccount" class="value">-</span>
+                                </div>
+                            </div>
+                            
+                            <div class="security-section">
+                                <div class="cvv-section">
+                                    <div class="label">CVV</div>
+                                    <div id="cardCvv" class="cvv-value">***</div>
+                                </div>
+                                <div class="hologram"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="signature-strip">
+                            <div class="signature-placeholder">
+                                <div class="signature-label">Firma del titular</div>
+                                <div class="signature-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <footer>
+  <div class="footer-socials" style="display: flex; flex-direction: row; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+    <!-- GitHub -->
+    <div class="social-item" style="display: flex; align-items: center; gap: 0.5rem;">
+      <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+      <a href="https://github.com/cyberiuscompany" target="_blank" style="padding: 0.4rem 0.8rem; background-color: #333; color: white; border-radius: 5px; text-decoration: none;">
+        GitHub
+      </a>
+    </div>
+
+    <!-- YouTube -->
+    <div class="social-item" style="display: flex; align-items: center; gap: 0.5rem;">
+      <i class="fab fa-youtube" style="font-size: 1.2rem; color: red;"></i>
+      <a href="https://www.youtube.com/@CyberiusCompany" target="_blank" style="padding: 0.4rem 0.8rem; background-color: red; color: white; border-radius: 5px; text-decoration: none;">
+        YouTube
+      </a>
+    </div>
+
+    <!-- PayPal -->
+    <div class="social-item" style="display: flex; align-items: center; gap: 0.5rem;">
+      <i class="fab fa-paypal" style="font-size: 1.2rem; color: #0070ba;"></i>
+      <a href="https://paypal.me/CyberiusCompany" target="_blank" style="padding: 0.4rem 0.8rem; background-color: #0070ba; color: white; border-radius: 5px; text-decoration: none;">
+        PayPal
+      </a>
+    </div>
+
+    <!-- Discord -->
+    <div class="social-item" style="display: flex; align-items: center; gap: 0.5rem;">
+      <i class="fab fa-discord" style="font-size: 1.2rem; color: #5865F2;"></i>
+      <a href="https://disboard.org/server/1299310806617292922"
+        target="_blank"
+        style="padding: 0.4rem 0.8rem; background-color: #5865F2; color: white; border-radius: 5px; text-decoration: none;">
+        Discord
+      </a>
+    </div>
+  </div>
+
+  <div style="text-align: center; font-size: 0.9rem; color: #888;">
+    &copy; 2025 Cyberius Company. Todos los derechos reservados.
+  </div>
+</footer>
+</body>
+</html>
